@@ -59,9 +59,9 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
    If you're using different connecetion and credentials then:
    - Reconfigure the application's database connection properties in the src/main/resources/application.properties file.
    - Update the following properties with your MySQL credentials:
-     spring.datasource.url=jdbc:mysql://localhost:3306/student_directory
-     spring.datasource.username=your-mysql-username
-     spring.datasource.password=your-mysql-password
+     - spring.datasource.url=jdbc:mysql://localhost:3306/student_directory
+     - spring.datasource.username=your-mysql-username
+     - spring.datasource.password=your-mysql-password
 
 4. **Execute sql script(s) and run the application**
 
@@ -71,29 +71,30 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
    - Login in created MySQL connection with correct credentials and go to File -> Open SQL script. Choose student_directory.sql and Execute it.
    - Open _spring-boot-hibernate-jpa_ project in your IDE and run the _CrudApplication.java_
      You can also run it from the command line:
-         cd spring-boot-hibernate-jpa/crud
-         ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
+        - cd spring-boot-hibernate-jpa/crud
+        - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
      
    **REST CRUD** and **REST CRUD with Spring Data JPA**
    - Login in created MySQL connection with correct credentials and go to File -> Open SQL script. Choose student_directory.sql and Execute it.
    - Open _spring-boot-rest-crud/spring-boot-rest-crud-spring-data-jpa_ project in your IDE and run the _RestCrudApplication.java_
      You can also run it from the command line:
-         cd spring-boot-rest-crud/crud (spring-boot-rest-crud-spring-data-jpa/crud)
-         ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
+        - cd spring-boot-rest-crud/crud (spring-boot-rest-crud-spring-data-jpa/crud)
+        - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
    - Use Postman (or some other application for API testing) to test the application
+     <br />
       API Endpoints
-         GET /api/students: Get a list of all students.
-         GET /api/students/{studentId}: Get a specific student by ID.
-         POST /api/students: Create a new student.
-         PUT /api/students: Update an existing student.
-         DELETE /api/students/{studentId}: Delete a student by ID.
+         - GET /api/students: Get a list of all students.
+         - GET /api/students/{studentId}: Get a specific student by ID.
+         - POST /api/students: Create a new student.
+         - PUT /api/students: Update an existing student.
+         - DELETE /api/students/{studentId}: Delete a student by ID.
 
    **MVC CRUD**
    - Login in created MySQL connection with correct credentials and go to File -> Open SQL scripts. Open: users_authorities.sql and student_directory.sql and execute both scripts.
    - Open _spring-boot-mvc-crud_ project in your IDE and run the _StudentsApplication.java_
    - You can also run it from the command line:
-         cd spring-boot-mvc-crud/spring-boot-mvc-crud
-         ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
+        - cd spring-boot-mvc-crud/spring-boot-mvc-crud
+        - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
      
      Accessing the Application
      - Open you browser and go to the http://localhost:8080
