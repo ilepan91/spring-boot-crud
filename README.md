@@ -53,11 +53,11 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
 
 2. **Create a MySQL Database:**
 
-   Open MySQL Workbench, and open 'create_user.sql' script.
-   After executing it, create a new connection: springstudent, where password should be set as 'springstudent' as well.
+   Open MySQL Workbench, and open `create_user.sql` script.
+   After executing it, create a new connection: `springstudent`, where password should be set as `springstudent` as well.
 
    If you're using different connecetion and credentials then:
-   - Reconfigure the application's database connection properties in the src/main/resources/application.properties file.
+   - Reconfigure the application's database connection properties in the `src/main/resources/application.properties` file.
    - Update the following properties with your MySQL credentials: <br/>
    `spring.datasource.url=jdbc:mysql://localhost:3306/student_directory` <br/>
    `spring.datasource.username=your-mysql-username` <br/>
@@ -65,42 +65,42 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
 
 4. **Execute sql script(s) and run the application**
 
-   - Download project to your file system or clone the repository: git clone https://github.com/ilepan91/spring-boot-crud.git
+   - Download project to your file system or clone the repository: `git clone https://github.com/ilepan91/spring-boot-crud.git`
 
    **Hibernate/JPA CRUD**
-   - Login in created MySQL connection with correct credentials and go to File -> Open SQL script. Choose student_directory.sql and Execute it.
+   - Login in created MySQL connection with correct credentials and go to `File -> Open SQL script`. Choose `student_directory.sql` and Execute it.
    - Open _spring-boot-hibernate-jpa_ project in your IDE and run the _CrudApplication.java_
      You can also run it from the command line:
-        - cd spring-boot-hibernate-jpa/crud
-        - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
+        - `cd spring-boot-hibernate-jpa/crud`
+        - `./mvnw spring-boot:run` (or `mvnw spring-boot:run` for MicrosoftWin)
      
    **REST CRUD** and **REST CRUD with Spring Data JPA**
-   - Login in created MySQL connection with correct credentials and go to File -> Open SQL script. Choose student_directory.sql and Execute it.
+   - Login in created MySQL connection with correct credentials and go to `File -> Open SQL script`. Choose `student_directory.sql` and Execute it.
    - Open _spring-boot-rest-crud/spring-boot-rest-crud-spring-data-jpa_ project in your IDE and run the _RestCrudApplication.java_
      You can also run it from the command line:
-        - cd spring-boot-rest-crud/crud (spring-boot-rest-crud-spring-data-jpa/crud)
-        - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
+        - `cd spring-boot-rest-crud/crud` (`cd spring-boot-rest-crud-spring-data-jpa/crud`)
+        - `./mvnw spring-boot:run` (or `mvnw spring-boot:run` for MicrosoftWin)
    - Use Postman (or some other application for API testing) to test the application
      <br/>
-      API Endpoints <br/>
-         - GET /api/students: Get a list of all students. <br/>
-         - GET /api/students/{studentId}: Get a specific student by ID. <br/>
-         - POST /api/students: Create a new student. <br/>
-         - PUT /api/students: Update an existing student. <br/>
-         - DELETE /api/students/{studentId}: Delete a student by ID.
-
+     **API Endpoints** <br/>
+     - `GET /api/students:` Get a list of all students
+     - `GET /api/students/{studentId}:` Get a specific student by ID
+     - `POST /api/students:` Create a new student
+     - `PUT /api/students:` Update an existing student
+     - `DELETE /api/students/{studentId}:` Delete a student by ID
+   
    **MVC CRUD**
    - Login in created MySQL connection with correct credentials and go to File -> Open SQL scripts. Open: users_authorities.sql and student_directory.sql and execute both scripts.
    - Open _spring-boot-mvc-crud_ project in your IDE and run the _StudentsApplication.java_
    - You can also run it from the command line:
-        - cd spring-boot-mvc-crud/spring-boot-mvc-crud
-        - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
+        - `cd spring-boot-mvc-crud/spring-boot-mvc-crud`
+        - `./mvnw spring-boot:run` (or `mvnw spring-boot:run` for MicrosoftWin)
      
      Accessing the Application
-     - Open you browser and go to the http://localhost:8080
+     - Open you browser and go to the `http://localhost:8080`
      - Login credentials:
-        - for Admin: username = admin, password = admin123
-        - for Student: username = student, password = student123
+        - for Admin: `username = admin`, `password = admin123`
+        - for Student: `username = student`, `password = student123`
      - Try adding, updating and deleting students.    
 
 6. **Usage**
