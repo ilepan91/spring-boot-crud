@@ -59,9 +59,9 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
    If you're using different connecetion and credentials then:
    - Reconfigure the application's database connection properties in the src/main/resources/application.properties file.
    - Update the following properties with your MySQL credentials: <br/>
-   spring.datasource.url=jdbc:mysql://localhost:3306/student_directory <br/>
-   spring.datasource.username=your-mysql-username <br/>
-   spring.datasource.password=your-mysql-password
+   `spring.datasource.url=jdbc:mysql://localhost:3306/student_directory` <br/>
+   `spring.datasource.username=your-mysql-username` <br/>
+   `spring.datasource.password=your-mysql-password`
 
 4. **Execute sql script(s) and run the application**
 
