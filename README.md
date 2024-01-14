@@ -58,10 +58,10 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
 
    If you're using different connecetion and credentials then:
    - Reconfigure the application's database connection properties in the src/main/resources/application.properties file.
-   - Update the following properties with your MySQL credentials:
-     - spring.datasource.url=jdbc:mysql://localhost:3306/student_directory
-     - spring.datasource.username=your-mysql-username
-     - spring.datasource.password=your-mysql-password
+   - Update the following properties with your MySQL credentials: <br/>
+   spring.datasource.url=jdbc:mysql://localhost:3306/student_directory <br/>
+   spring.datasource.username=your-mysql-username <br/>
+   spring.datasource.password=your-mysql-password
 
 4. **Execute sql script(s) and run the application**
 
@@ -81,12 +81,12 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
         - cd spring-boot-rest-crud/crud (spring-boot-rest-crud-spring-data-jpa/crud)
         - ./mvnw spring-boot:run (or 'mvnw spring-boot:run' for MicrosoftWin)
    - Use Postman (or some other application for API testing) to test the application
-     <br />
-      API Endpoints
-         - GET /api/students: Get a list of all students.
-         - GET /api/students/{studentId}: Get a specific student by ID.
-         - POST /api/students: Create a new student.
-         - PUT /api/students: Update an existing student.
+     <br/>
+      API Endpoints <br/>
+         - GET /api/students: Get a list of all students. <br/>
+         - GET /api/students/{studentId}: Get a specific student by ID. <br/>
+         - POST /api/students: Create a new student. <br/>
+         - PUT /api/students: Update an existing student. <br/>
          - DELETE /api/students/{studentId}: Delete a student by ID.
 
    **MVC CRUD**
