@@ -90,7 +90,7 @@ This Spring MVC application provides a simple CRUD (Create, Read, Update, Delete
      - `DELETE /api/students/{studentId}:` Delete a student by ID
    
    **MVC CRUD**
-   - Login in created MySQL connection with correct credentials and go to File -> Open SQL scripts. Open: users_authorities.sql and student_directory.sql and execute both scripts.
+   - Login in created MySQL connection with correct credentials and go to `File -> Open SQL script`. Open: `users_authorities.sql` and `student_directory.sql` and execute both scripts.
    - Open _spring-boot-mvc-crud_ project in your IDE and run the _StudentsApplication.java_
    - You can also run it from the command line:
         - `cd spring-boot-mvc-crud/spring-boot-mvc-crud`
